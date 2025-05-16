@@ -30,7 +30,7 @@ a, .btn-link:hover {
     flex-wrap: wrap;
     
 .card {
-    height: 200px;
+    height: 100px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
