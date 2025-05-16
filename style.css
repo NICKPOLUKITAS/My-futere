@@ -28,6 +28,7 @@ a, .btn-link:hover {
 .row {
     display: flex;
     flex-wrap: wrap;
+}
     
 .card {
     height: 300px;
