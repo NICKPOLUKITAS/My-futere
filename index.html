@@ -5,64 +5,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Meu portfólio</title>
+    <title>Meu portfólio - Leide Day</title>
 </head>
 
 <body>
-    <header class="container text-center">
-        <img src="me.jpg.jpeg" alt="Meu Avatar" class="rounded-circle" width="150" height="150" srcset="">
-        <p class="lead">Eu sou Leide Day</p>
+    <header class="container text-center my-5">
+        <img src="me.jpg.jpeg" alt="Meu Avatar" class="rounded-circle" width="150" height="150">
+        <p class="lead mt-3">Eu sou Leide Day</p>
         <h1>Estou concluindo o Ensino Médio</h1>
-        <p>Tenho dons naturais que desenvolvi sozinha, com dedicacão e curiosidade sem ao menos ter feito cursos. Sou detalhista, observadora e apaixonada por tudo que envolve criação. Me identifico com áreas como arquitetura, programação, estética e também pelo universo do futebol.</p>
-        <p>Minhas habilidades</p>
+        <p>Tenho dons naturais que desenvolvi sozinha, com dedicação e curiosidade sem ao menos ter feito cursos. Sou detalhista, observadora e apaixonada por tudo que envolve criação. Me identifico com áreas como arquitetura, programação, estética e também pelo universo do futebol.</p>
+        <p class="fw-bold">Minhas habilidades</p>
         <div>
-            <p class="badge bg-secondary">Estética e Beleza</p>
-            <p class="badge bg-secondary">Produção Artesanal</p>
-            <p class="badge bg-secondary">introdução HTMLe CSS</p>
-            <p class="badge bg-secondary">Decorações</p>
+            <span class="badge bg-secondary">Estética e Beleza</span>
+            <span class="badge bg-secondary">Produção Artesanal</span>
+            <span class="badge bg-secondary">Introdução HTML e CSS</span>
+            <span class="badge bg-secondary">Decorações</span>
         </div>
     </header>
-    <main class="container">
-        <h2>Meus projetos</h2>
-    <div class="row">
-        <div class="col-md-4 mb-4">
-            <div class="card h-100">
-                <img src="desenho.jpg.jpeg" class="card-img-top" alt="Desenho">
-                <div class="card-body">
-                    <h5 class="card-title">Desenho de mim criança</h5>
-                    <p class="card-text">Um desenho feito à mão que mostra meu rosto quando eu era pequena. Usei lápis para captar os detalhes e expressar a pureza e a calma daquela época.</p>
-                    <a href="#" class="btn btn-primary">Saiba mais!</a>
+
+    <main class="container my-5">
+        <h2 class="mb-4">Meus projetos</h2>
+        <div class="row">
+            <!-- Projeto 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="desenho.jpg.jpeg" class="card-img-top" alt="Desenho de mim criança">
+                    <div class="card-body">
+                        <h5 class="card-title">Desenho de mim criança</h5>
+                        <p class="card-text">Um desenho feito à mão que mostra meu rosto quando eu era pequena. Usei lápis para captar os detalhes e expressar a pureza e a calma daquela época.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Saiba mais!</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="pintura.jpg.jpeg" class="card-img-top" alt="Pintura em tecido">
+                    <div class="card-body">
+                        <h5 class="card-title">Pintura em Tecido</h5>
+                        <p class="card-text">Pintura feita em tecido que mostra uma borboleta vestida segurando uma bebê borboleta. Um trabalho feito à mão, cheio de cuidado e delicadeza.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">Saiba mais!</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="quadro.jpg.jpeg" class="card-img-top" alt="Quadro das minhas calopsitas">
+                    <div class="card-body">
+                        <h5 class="card-title">Quadro das minhas calopsitas</h5>
+                        <p class="card-text">Pintura que mostra minhas calopsitas com detalhes das cores e penas. É uma forma de lembrar o carinho que tenho por elas e o quanto são especiais para mim.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">Saiba mais!</button>
+                    </div>
                 </div>
             </div>
         </div>
+    </main>
 
-        <div class="col-md-4 mb-4">
-            <div class="card h-100">
-                <img src="pintura.jpg.jpeg" class="card-img-top" alt="Pntura">
-                <div class="card-body">
-                    <h5 class="card-title">Pintura em Tecido</h5>
-                    <p class="card-text">Pintura feita em tecido que mostra uma borboleta vestida segurando uma bebê borboleta. Um trabalho feito à mão, cheio de cuidado e delicadeza.</p>
-                    <a href="#" class="btn btn-primary">Saiba mais!</a>
+    <!-- Modal 1 -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Desenho de mim criança</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                 </div>
-            </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-            <div class="card h-100">
-                <img src="quadro.jpg.jpeg" class="card-img-top" alt="Quadro">
-                <div class="card-body">
-                    <h5 class="card-title">Quadro das minhas psitas</h5>
-                    <p class="card-text">Pintura que mostra minhas calopsitas com detalhes das cores e penas. É uma forma de lembrar o carinho que tenho por elas e o quanto são especiais para mim.</p>
-                    <a href="#" class="btn btn-primary">Saiba mais!</a>
+                <div class="modal-body">
+                    <p>Esse desenho é um autorretrato feito à mão, representando minha infância. Através do lápis, busquei capturar a doçura e inocência de quando era pequena, destacando os traços delicados e a emoção da memória.</p>
+                    <img src="desenho.jpg.jpeg" class="img-fluid" alt="Desenho de mim criança">
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Modal 2 -->
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Pintura em Tecido</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Criei essa pintura em tecido inspirada pela natureza e pela ternura da maternidade. A borboleta e sua filhote representam a delicadeza, o cuidado e a liberdade criativa que a arte proporciona.</p>
+                    <img src="pintura.jpg.jpeg" class="img-fluid" alt="Pintura em tecido de borboletas">
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Modal 3 -->
+    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Quadro das minhas calopsitas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Essa pintura é dedicada às minhas calopsitas, que me acompanham diariamente. A arte mostra meu carinho por elas e o quanto elas me inspiram com sua beleza e personalidade.</p>
+                    <img src="quadro.jpg.jpeg" class="img-fluid" alt="Quadro das calopsitas">
+                </div>
+            </div>
+        </div>
+    </div>
 
-    </main>
+    <footer class="container text-center py-5">
+        <h2>Entre em contato</h2>
+        <div>
+            <i class="bi bi-github"></i>
+            <a href="https://github.com/">GitHub</a> <!-- Adicione seu GitHub aqui -->
+        </div>
+        <p class="mt-4">© Copyright 2024. Produzido por Leide Day</p>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
